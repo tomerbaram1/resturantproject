@@ -11,16 +11,17 @@
     width: 25vW;
     height: 100VH;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.16);
+    background-color: rgba(6, 6, 3, 0.215);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .link1 {
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    background-color: rgba(117, 117, 15, 0.159);
+    background-color: rgba(255, 234, 5, 0.03);
 }
 .menu {
     background-image: url('fast-food.webp');
@@ -63,4 +64,10 @@ img{
  
     margin: auto;
 
+}
+#img1{
+    float: center;  
+}
+#img2{
+    float: center;
 }
