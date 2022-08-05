@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    font-family: 'Bebas Neue', cursive; 
+}
 .container{
     background-image: url('fast-food.webp');
     height: 100vh;
@@ -9,37 +13,65 @@
 
 .sec{
     width: 25vW;
-    height: 100VH;
+    height: 95VH;
     text-align: center;
-    background-color: rgba(6, 6, 3, 0.215);
+    background-color: rgba(0, 0, 0, 0.215);
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .link1 {
+    font-family: 'Bebas Neue', cursive; 
+    color: black;
+    height: 5VH;
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    background-color: rgba(255, 234, 5, 0.03);
+    background-color: rgba(255, 5, 5, 0.03);
+    text-decoration: none;
+} 
+a{
+    text-decoration: none;
 }
+a:visited {
+        color: rgb(0, 0, 0);
+       
+    }
+
+
 .menu {
     background-image: url('fast-food.webp');
-    height: 250vh;
+    height: 260vh;
     width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
-  
+
+}
+h3#img1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    float: center;  
+    font-family: 'Tangerine', serif;
+    font-size: 40px;
 }
 img{
-    width: 30vw;
-    height: 30vh;
-    border-radius: 30%;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 50%;
     border-style:dotted; color: rgba(255, 255, 224, 0.303);
-}
 
+}
+hr{
+    border: 2px solid rgb(248, 255, 39);   
+  }
+  #gluten{
+    position: relative;
+    left: 2%;
+    
+  }
 .sec3{
     background-image: url('fast-food.webp');
     height: 100vh;
@@ -58,16 +90,22 @@ img{
     background-position: center;
     background-size: cover;
     margin: auto;
-
 }
 #contact{
- 
     margin: auto;
-
-}
-#img1{
-    float: center;  
 }
 #img2{
     float: center;
+}
+
+
+.food{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
