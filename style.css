@@ -8,19 +8,28 @@
     width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; 
+
+  
+   
+}
+.box1{
+    position: relative;
+    z-index: 21;
 }
 
-.sec{
+.home{
     width: 25vW;
     height: 95VH;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.215);
+    background-color: rgba(0, 0, 0, 0.236);
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-width: min-content;
 }
+
 .link1 {
     font-family: 'Bebas Neue', cursive; 
     color: black;
@@ -29,16 +38,25 @@
     justify-content: center;
     justify-content: space-around;
     background-color: rgba(255, 5, 5, 0.03);
-    text-decoration: none;
+    text-decoration:  none;
+    height: 0.1vh;
+
 } 
 a{
     text-decoration: none;
 }
 a:visited {
-        color: rgb(0, 0, 0);
-       
+        color: rgb(0, 0, 0); 
     }
+    a:hover {
+   background-color: rgba(255, 255, 0, 0.326);
+ border-style:solid;
+   height: 20px;
 
+      }
+body{
+    margin: 0;
+}
 
 .menu {
     background-image: url('fast-food.webp');
@@ -47,6 +65,10 @@ a:visited {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+#menu:hover{
+    color: yellow
+    ; transition-duration: 2s;
 
 }
 h3#img1{
@@ -61,18 +83,27 @@ img{
     width: 20vw;
     height: 20vh;
     border-radius: 50%;
-    border-style:dotted; color: rgba(255, 255, 224, 0.303);
+    border-style:solid; color: rgba(255, 255, 224, 0.303);
+    display: block;
 
 }
 hr{
-    border: 2px solid rgb(248, 255, 39);   
+    border: 1px solid rgb(248, 255, 39); 
+    width: 255px;  
   }
   #gluten{
     position: relative;
     left: 2%;
+    bottom: 3%;
     
   }
-.sec3{
+  img:hover{
+    transition-duration: 2s;
+    color: red;
+  }
+ 
+  
+.about{
     background-image: url('fast-food.webp');
     height: 100vh;
     width: 100vw;
@@ -80,8 +111,8 @@ hr{
     background-position: center;
     background-size: cover;
     margin: auto;
-    display: grid;
-}
+    display: grid;}
+   
 .contact{
     background-image: url('fast-food.webp');
     height: 100vh;
@@ -89,23 +120,95 @@ hr{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: auto;
+   
+  
 }
 #contact{
-    margin: auto;
+    margin: auto
 }
 #img2{
     float: center;
 }
-
 
 .food{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+span{
+    display: none;
+    background-color: rgba(221, 215, 25, 0.684);
+    padding: 10px;
+}
+.food:hover span{
+    display: block;
+}
+
 .con{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
+input{
+    width: 40vh;
+}
+ul li:hover{
+    color: yellow;
+} 
+
+
+@media only screen and (max-width:768px){
+.home{
+   
+}
+}
+@media only screen and (max-width:768px){
+    .box1{
+        background-image: url('mobile-back.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    } 
+    @media only screen and (max-width:768px){
+    #menu{
+        background-image: url('menu.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+  
+    } 
+    #about{
+        background-image: url('mobile-back.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-height: fit-content;
+        
+    }
+    #contact1{
+        background-image: url('mobile-back.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-height: fit-content;
+        
+    
+
+
+
+    }
+    #gluten{
+        position: relative;
+        left: 2%;
+        bottom: 3%;
+    }
+#contact{
+    position: relative;
+   top: 3%;
+}
+}
+    
+    
+    
